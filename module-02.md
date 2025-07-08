@@ -1,4 +1,4 @@
-# Key Performance Metrics
+# Module 02: Key Performance Metrics
 
 Understanding key performance metrics is foundational to optimizing Java applications. These metrics help you **identify bottlenecks**, **measure improvements**, and **set performance baselines**.
 

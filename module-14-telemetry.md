@@ -1,4 +1,4 @@
-# Telemetry & Observability
+# Module 14: Telemetry & Observability
 
 ## Introduction to Telemetry
 
@@ -18,13 +18,3 @@ Popular tools: **OpenTelemetry** (standardized instrumentation), **Prometheus** 
 
 **2. Auto-instrumentation Agents:**
   - Many frameworks (e.g., Spring Boot) support auto-instrumentation via Java agents, requiring no code changes.
-  - Agents can automatically capture HTTP requests, database calls, and more.
-
-**3. Export and Visualize Data:**
-  - Export telemetry data to backends like Prometheus, Jaeger, Zipkin, or commercial APMs.
-  - Use dashboards and alerting to monitor and respond to issues in real time.
-
-**4. Best Practices:**
-  - Instrument both success and failure paths.
-  - Use consistent naming and tagging for metrics and traces.
-  - Monitor telemetry overhead to avoid performance impact.

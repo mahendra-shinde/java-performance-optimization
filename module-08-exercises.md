@@ -1,4 +1,4 @@
-# Hands-on Java Performance Exercises (with Explanations)
+# Module 08: Hands-on Java Performance Exercises
 
 These exercises are designed to give you practical experience with Java performance measurement, JVM tuning, memory management, and troubleshooting. Each exercise includes a brief explanation to help you understand the underlying concepts.
 

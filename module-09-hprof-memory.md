@@ -1,4 +1,4 @@
-# HPROF Files and In-Depth Memory Analysis
+# Module 09: HPROF Files and In-Depth Memory Analysis
 
 Memory analysis is crucial for diagnosing memory leaks, high memory usage, and understanding object retention in Java applications. The JVM can generate heap dump files (usually with a `.hprof` extension) that capture the entire state of the heap at a point in time.
 
@@ -18,13 +18,3 @@ A heap dump is a snapshot of all objects in the JVM heap. It includes informatio
 - **Browse objects by class**: See which classes consume the most memory.
 - **Find GC roots**: Identify why objects are not being collected.
 - **Compare heap dumps**: Track memory usage over time.
-
-## Key Concepts in Memory Analysis
-- **Collection-level memory leaks**: Occur when collections (e.g., lists, maps) grow indefinitely due to unreleased references.
-- **Retained object chains**: Sequences of references that keep objects alive in memory.
-- **Memory dominators**: Objects that, if collected, would free up large portions of memory.
-
-## Best Practices
-- Always analyze heap dumps from production-like environments.
-- Look for unusually large collections or objects with high retained size.
-- Use memory analysis to guide code fixes and JVM tuning.

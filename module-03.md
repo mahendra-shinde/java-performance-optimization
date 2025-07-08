@@ -1,4 +1,4 @@
-# Understanding the Java Virtual Machine (JVM)
+# Module 03: Understanding the Java Virtual Machine (JVM)
 
 The Java Virtual Machine (JVM) is the **engine** that runs Java applications. It **abstracts the underlying OS and hardware**, providing features like portability, security, and performance optimization through **Just-In-Time (JIT) compilation**, **Garbage Collection**, and **runtime monitoring**.
 

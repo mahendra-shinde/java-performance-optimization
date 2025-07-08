@@ -1,4 +1,4 @@
-# Essential Tools for Java Performance Tuning
+# Module 07: Essential Tools for Java Performance Tuning
 
 Java performance optimization relies on a variety of tools to identify, analyze, and resolve bottlenecks. Each tool serves a specific purpose, from profiling CPU and memory usage to simulating load and analyzing garbage collection behavior. Below is a detailed overview of the most widely used tools, their features, and best practices for effective usage.
 
@@ -18,8 +18,3 @@ Java performance optimization relies on a variety of tools to identify, analyze,
 ## How to Use These Tools Effectively
 
 - **Start with VisualVM or JConsole** for live monitoring and basic profiling.
-- **Use JProfiler** for deep-dive analysis of CPU/memory issues and to find memory leaks or performance hotspots.
-- **Analyze GC logs with GCViewer** to tune garbage collection and reduce pause times.
-- **Simulate real-world load with JMeter** to validate performance under stress and identify scalability issues.
-
-> **Tip:** Always profile and test in an environment that closely resembles production for accurate results.

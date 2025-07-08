@@ -1,4 +1,4 @@
-# HTTP and Web Application Tuning
+# Module 13: HTTP and Web Application Tuning
 
 **1. Connection Pooling in HTTP Clients:**
   - Use HTTP clients (like Apache HttpClient, OkHttp) that support connection pooling to reuse TCP connections, reducing latency and resource usage.
@@ -18,4 +18,3 @@
   - Only send necessary data in responses. Use pagination and filtering for large datasets.
 
 **6. Monitor and Profile:**
-  - Use APM tools to monitor endpoint performance and identify bottlenecks.

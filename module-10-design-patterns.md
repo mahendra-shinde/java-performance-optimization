@@ -1,4 +1,4 @@
-# Performance Design Patterns and Java APIs (with Explanations)
+# Module 10: Performance Design Patterns and Java APIs
 
 Applying the right design patterns and Java APIs can dramatically improve application performance, maintainability, and scalability. Below are key areas, recommended patterns/APIs, and explanations for each.
 

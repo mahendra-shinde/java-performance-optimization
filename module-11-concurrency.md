@@ -1,4 +1,4 @@
-# Concurrency & Multithreading in Java (with Explanations)
+# Module 11: Concurrency & Multithreading in Java
 
 Concurrency and multithreading are essential for building high-performance, scalable Java applications. Proper synchronization and thread management can maximize CPU utilization and prevent common pitfalls like deadlocks and race conditions.
 
