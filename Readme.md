@@ -1,4 +1,27 @@
-# Java Performance Optimization 
+
+# Java Performance Optimization
+
+## Table of Contents
+
+| Module | Title                                   | Link                                      |
+| ------ | --------------------------------------- | ----------------------------------------- |
+| 1      | JVM Flags and Performance               | [module-01-jvm-flags.md](module-01-jvm-flags.md) |
+| 2      | JVM Memory and GC Options               | [module-02-jvm-memory-and-gc.md](module-02-jvm-memory-and-gc.md) |
+| 3      | Stack vs. Heap Memory Visualization     | [module-03-stack-vs-heap.md](module-03-stack-vs-heap.md) |
+| 4      | Simulate a Memory Leak                  | [module-04-memory-leak-simulation.md](module-04-memory-leak-simulation.md) |
+| 5      | Garbage Collection                      | [module-05-garbage-collection.md](module-05-garbage-collection.md) |
+| 6      | Enterprise Tuning                       | [module-06-enterprise-tuning.md](module-06-enterprise-tuning.md) |
+| 7      | Tools                                   | [module-07-tools.md](module-07-tools.md) |
+| 8      | Exercises                               | [module-08-exercises.md](module-08-exercises.md) |
+| 9      | HPROF Memory Analysis                   | [module-09-hprof-memory.md](module-09-hprof-memory.md) |
+| 10     | Design Patterns                         | [module-10-design-patterns.md](module-10-design-patterns.md) |
+| 11     | Concurrency                             | [module-11-concurrency.md](module-11-concurrency.md) |
+| 12     | JDBC and I/O                            | [module-12-jdbc-io.md](module-12-jdbc-io.md) |
+| 13     | HTTP Tuning                             | [module-13-http-tuning.md](module-13-http-tuning.md) |
+| 14     | Telemetry                               | [module-14-telemetry.md](module-14-telemetry.md) |
+| 15     | Best Practices                          | [module-15-best-practices.md](module-15-best-practices.md) |
+
+## Introduction and brief summary
 
 ## 1.  Importance of Performance Optimization
 
