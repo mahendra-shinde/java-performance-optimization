@@ -25,6 +25,3 @@ This is a simple Java application for demonstrating JVM performance optimization
 - Observe thread behavior and CPU utilization
 - Experiment with memory and GC tuning
 
----
-
-Feel free to modify the workload or add more complex processing for advanced demos.
