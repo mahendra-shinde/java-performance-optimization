@@ -18,3 +18,32 @@ Java performance optimization relies on a variety of tools to identify, analyze,
 ## How to Use These Tools Effectively
 
 - **Start with VisualVM or JConsole** for live monitoring and basic profiling.
+
+### Steps to Profile CPU/Memory Using VisualVM
+
+1. **Launch VisualVM**  
+    Start VisualVM (`visualvm` command or from the bin directory).
+
+2. **Connect to Your Java Application**  
+    Locate your running Java process in the left-hand pane and double-click to connect.
+
+3. **Monitor Live Metrics**  
+    Use the "Monitor" tab to observe real-time CPU, heap, and thread usage.
+
+4. **Profile CPU Usage**  
+    - Go to the "Profiler" tab.
+    - Click "CPU" and then "Start".
+    - Exercise your application to generate load.
+    - Click "Stop" to end profiling and review method-level CPU usage.
+
+5. **Profile Memory Usage**  
+    - In the "Profiler" tab, select "Memory" and click "Start".
+    - Perform memory-intensive operations in your app.
+    - Click "Stop" to analyze object allocations and memory hotspots.
+
+6. **Analyze Heap Dumps (Optional)**  
+    - Take a heap dump from the "Monitor" tab.
+    - Analyze object retention, memory leaks, and reference chains.
+
+7. **Export and Share Results**  
+    Save snapshots or export reports for further analysis or sharing with your team.
