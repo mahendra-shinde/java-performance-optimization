@@ -1,0 +1,51 @@
+productId,name,description,manufactoring_date,expiry_date
+1,Alpha Widget,High quality widget,2024-01-10,2026-01-10
+2,Beta Gadget,Advanced gadget for daily use,2024-02-15,2026-02-15
+3,Gamma Tool,Durable tool for professionals,2024-03-20,2026-03-20
+4,Delta Device,Compact and efficient device,2024-04-25,2026-04-25
+5,Epsilon Gear,Precision engineered gear,2024-05-30,2026-05-30
+6,Zeta Component,Essential component for machines,2024-06-05,2026-06-05
+7,Eta Module,Modular design for flexibility,2024-07-10,2026-07-10
+8,Theta Part,High performance part,2024-08-15,2026-08-15
+9,Iota Accessory,Accessory for multiple uses,2024-09-20,2026-09-20
+10,Kappa Unit,Unit for industrial applications,2024-10-25,2026-10-25
+11,Lambda Widget,Next-gen widget,2024-11-30,2026-11-30
+12,Mu Gadget,Smart gadget for home,2025-01-05,2027-01-05
+13,Nu Tool,Ergonomic tool,2025-02-10,2027-02-10
+14,Xi Device,Energy efficient device,2025-03-15,2027-03-15
+15,Omicron Gear,Heavy-duty gear,2025-04-20,2027-04-20
+16,Pi Component,Component for electronics,2025-05-25,2027-05-25
+17,Rho Module,Module for automation,2025-06-30,2027-06-30
+18,Sigma Part,Precision part,2025-07-05,2027-07-05
+19,Tau Accessory,Accessory for gadgets,2025-08-10,2027-08-10
+20,Upsilon Unit,Unit for assembly lines,2025-09-15,2027-09-15
+21,Phi Widget,Widget with advanced features,2025-10-20,2027-10-20
+22,Chi Gadget,Compact gadget,2025-11-25,2027-11-25
+23,Psi Tool,Multi-purpose tool,2026-01-01,2028-01-01
+24,Omega Device,Device for smart homes,2026-02-06,2028-02-06
+25,AlphaX Gear,High torque gear,2026-03-13,2028-03-13
+26,BetaX Component,Component for robotics,2026-04-18,2028-04-18
+27,GammaX Module,Module for IoT,2026-05-23,2028-05-23
+28,DeltaX Part,Part for vehicles,2026-06-28,2028-06-28
+29,EpsilonX Accessory,Accessory for wearables,2026-08-03,2028-08-03
+30,ZetaX Unit,Unit for automation,2026-09-08,2028-09-08
+31,EtaX Widget,Widget for education,2026-10-13,2028-10-13
+32,ThetaX Gadget,Gadget for entertainment,2026-11-18,2028-11-18
+33,IotaX Tool,Tool for construction,2027-01-23,2029-01-23
+34,KappaX Device,Device for healthcare,2027-02-28,2029-02-28
+35,LambdaX Gear,Gear for sports,2027-04-05,2029-04-05
+36,MuX Component,Component for aerospace,2027-05-10,2029-05-10
+37,NuX Module,Module for research,2027-06-15,2029-06-15
+38,XiX Part,Part for marine,2027-07-20,2029-07-20
+39,OmicronX Accessory,Accessory for travel,2027-08-25,2029-08-25
+40,PiX Unit,Unit for logistics,2027-10-01,2029-10-01
+41,RhoX Widget,Widget for agriculture,2027-11-06,2029-11-06
+42,SigmaX Gadget,Gadget for security,2028-01-11,2030-01-11
+43,TauX Tool,Tool for maintenance,2028-02-16,2030-02-16
+44,UpsilonX Device,Device for communication,2028-03-23,2030-03-23
+45,PhiX Gear,Gear for automation,2028-04-28,2030-04-28
+46,ChiX Component,Component for AI,2028-06-03,2030-06-03
+47,PsiX Module,Module for analytics,2028-07-08,2030-07-08
+48,OmegaX Part,Part for energy,2028-08-13,2030-08-13
+49,AlphaY Accessory,Accessory for mobility,2028-09-18,2030-09-18
+50,BetaY Unit,Unit for smart cities,2028-10-23,2030-10-23
