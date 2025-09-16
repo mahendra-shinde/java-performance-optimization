@@ -47,14 +47,7 @@ Observe:
 ###  Step 3: Run With Custom JVM Flags
 
 ```bash
-java \
-  -Xms128m -Xmx512m \
-  -XX:+UseG1GC \
-  -XX:+PrintGCDetails \
-  -XX:+PrintGCTimeStamps \
-  -XX:+HeapDumpOnOutOfMemoryError \
-  -Xlog:gc* \
-  MemoryTestApp
+java -Xms128m -Xmx512m -XX:+UseG1GC -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -Xlog:gc*  MemoryTestApp
 ```
 
 🔍 **Explanation**:
