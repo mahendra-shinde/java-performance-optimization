@@ -25,6 +25,21 @@ try (BufferedReader reader = new BufferedReader(new FileReader("largefile.txt"))
 }
 ```
 
+### Example: Non blocking I/O
+
+```java
+Path path = Paths.get("largefile.txt");
+try (AsynchronousFileChannel channel = AsynchronousFileChannel.open(path, StandardOpenOption.READ)) {
+    ByteBuffer buffer = ByteBuffer.allocate(1024);
+    Future<Integer> result = channel.read(buffer, 0);
+    while (!result.isDone()) {
+        // Perform other tasks while waiting for I/O to complete
+    }
+    int bytesRead = result.get();
+    buffer.flip();
+    // Process buffer data
+}
+```
 
 
 ## Tips

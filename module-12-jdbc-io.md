@@ -52,23 +52,6 @@ try (Connection conn = dataSource.getConnection();
 - **Use WHERE Clauses:** Filter data as early as possible to reduce the amount of data processed and transferred.
 - **Optimize Joins:** Ensure joined columns are indexed and avoid joining large tables unnecessarily.
 
-## I/O Optimization
-
-- **Buffering:** Use buffered streams (`BufferedReader`, `BufferedWriter`) for file I/O to reduce disk access.
-- **Bulk Operations:** Read/write data in chunks instead of byte-by-byte or line-by-line for large files.
-- **Asynchronous I/O:** For high-throughput applications, consider using NIO (Non-blocking I/O) or asynchronous APIs.
-
-## Example: Buffered File Read
-
-```java
-try (BufferedReader reader = new BufferedReader(new FileReader("data.txt"))) {
-    String line;
-    while ((line = reader.readLine()) != null) {
-        // process line
-    }
-}
-```
-
 ## Best Practices Checklist
 
 - Use connection pooling
@@ -77,7 +60,4 @@ try (BufferedReader reader = new BufferedReader(new FileReader("data.txt"))) {
 - Minimize data transfer
 - Close resources properly
 - Profile and analyze queries
-- Use buffered I/O for files
 
----
-For more advanced tuning, refer to your database's documentation and profiling tools (e.g., VisualVM, YourKit, database-specific profilers).

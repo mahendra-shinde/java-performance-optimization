@@ -1,6 +1,8 @@
+
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
 
 class Product {
     int productId;
@@ -108,5 +110,17 @@ public class LoadProductsDemo {
         Runtime runtime = Runtime.getRuntime();
         runtime.gc(); // Suggest GC to get more accurate measurement
         return runtime.totalMemory() - runtime.freeMemory();
+    }
+
+    // Method for Async loading using CompletableFuture
+    // Benefits: Non-blocking, can improve responsiveness in UI applications
+    public static CompletableFuture<List<Product>> loadWithNIOAsync(String filePath) {
+        return CompletableFuture.supplyAsync(() -> {
+            try {
+                return loadWithNIO(filePath);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 }
