@@ -1,7 +1,17 @@
-.class
-.classpath
+# Eclipse IDE files and folders
+**/.class
+**/.classpath
+**/.project
+**/.settings/
+# Maven target directory
+**/target/
+# VS Code settings
+.vscode/
+# Mac system files
+.DS_Store
+# Windows system files
+Thumbs.db
 .jar
-.war
 .war
 .hprof
 .hprof.*

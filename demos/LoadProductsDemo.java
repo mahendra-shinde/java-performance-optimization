@@ -48,8 +48,10 @@ public class LoadProductsDemo {
 
     public static List<Product> loadWithNIO(String filePath) throws IOException {
         List<Product> products = new ArrayList<>();
-        List<String> lines = Files.readAllLines(Paths.get(filePath));
-        for (int i = 1; i < lines.size(); i++) { // skip header
+        // To get file from classpath:
+        ClassLoader classLoader = LoadProductsDemo.class.getClassLoader();
+        Path path = Paths.get(Objects.requireNonNull(classLoader.getResource(filePath)).toURI());
+        List<String> lines = Files.readAllLines(path);  for (int i = 1; i < lines.size(); i++) { // skip header
             String[] parts = lines.get(i).split(",", 5);
             if (parts.length == 5) {
                 products.add(new Product(
