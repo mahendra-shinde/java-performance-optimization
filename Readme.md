@@ -21,6 +21,8 @@
 | 14     | Telemetry                               | [module-14-telemetry.md](module-14-telemetry.md) |
 | 15     | Best Practices                          | [module-15-best-practices.md](module-15-best-practices.md) |
 
+| 16     | File I/O Optimization                   | [module-16-file-io-optimization.md](module-16-file-io-optimization.md) |
+
 ## Introduction and brief summary
 
 ## 1.  Importance of Performance Optimization

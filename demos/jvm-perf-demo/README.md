@@ -25,3 +25,23 @@ This is a simple Java application for demonstrating JVM performance optimization
 - Observe thread behavior and CPU utilization
 - Experiment with memory and GC tuning
 
+## Collecting a Heap Dump
+
+To run the demo and collect a memory heap dump:
+
+1. Start the application with heap dump options:
+   ```sh
+   java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./heapdump.hprof jvmperf.Main
+   ```
+   - This will generate a `heapdump.hprof` file if an OutOfMemoryError occurs.
+
+2. To force a heap dump at any time, find the process ID (PID) of your Java process:
+   ```sh
+   jps
+   ```
+   Then run:
+   ```sh
+jcmd <PID> GC.heap_dump heapdump.hprof
+   ```
+
+3. Analyze the heap dump using tools like [Eclipse MAT](https://www.eclipse.org/mat/) or [VisualVM](https://visualvm.github.io/).
