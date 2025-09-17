@@ -1,4 +1,3 @@
-
 # Java Performance Optimization
 
 ## Table of Contents
@@ -20,8 +19,10 @@
 | 13     | HTTP Tuning                             | [module-13-http-tuning.md](module-13-http-tuning.md) |
 | 14     | Telemetry                               | [module-14-telemetry.md](module-14-telemetry.md) |
 | 15     | Best Practices                          | [module-15-best-practices.md](module-15-best-practices.md) |
-
 | 16     | File I/O Optimization                   | [module-16-file-io-optimization.md](module-16-file-io-optimization.md) |
+| 17     | Caching                                 | [module-17-caching.md](module-17-caching.md) |
+| 18     | Web Applications                        | [module-18-webapps.md](module-18-webapps.md) |
+| 19     | Microservices Scalability                | [module-19-microservices-scalability.md](module-19-microservices-scalability.md) |
 
 ## Introduction and brief summary
 
