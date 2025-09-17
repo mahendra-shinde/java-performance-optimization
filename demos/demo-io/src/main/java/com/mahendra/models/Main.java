@@ -7,26 +7,32 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class Main {
 	// Translating the classpath (relative to source) to absolute path
-	static final String DATAFILE = Main.class.getResource("/products.csv").getPath();
-
+	static final URL DATAFILE = Main.class.getResource("/products.csv");
+	static final URL DATA2 = Main.class.getResource("/products-large.csv");
 	public static void main(String[] args) {
-		System.out.println("Perform Basic/Legacy IO Operation");
+		System.out.println("Perform Basic/Legacy IO Operation on smaller file");
 		testBufferedReader(DATAFILE);
 
-		System.out.println("Non block IO Operations");
+		System.out.println("Non block IO Operations on smaller file");
 		testNIO(DATAFILE);
 
+		System.out.println("With Large file");
+		System.out.println("Perform Basic/Legacy IO Operation");
+		testBufferedReader(DATA2);
+
+		System.out.println("Non block IO Operations");
+		testNIO(DATA2);
+		
 	}
 
-	private static void testBufferedReader(String filePath) {
+	private static void testBufferedReader(URL filePath) {
 		System.out.println("Loading with BufferedReader:");
 		long startMem = getUsedMemory();
 		long startTime = System.nanoTime();
-		List<Product> products = loadWithBufferedReader(filePath);
+		List<Product> products = loadWithBufferedReader(filePath.getPath());
 		long endTime = System.nanoTime();
 		long endMem = getUsedMemory();
 		// products.forEach(System.out::println);
@@ -69,13 +75,13 @@ public class Main {
 		return products;
 	}
 
-	private static void testNIO(String filePath) {
+	private static void testNIO(URL filePath) {
 		System.out.println("\nLoading with NIO:");
 		long startMem = getUsedMemory();
 		long startTime = System.nanoTime();
 		
 		try {
-			URI path = Main.class.getResource("/products.csv").toURI();
+			URI path = filePath.toURI();
 			List<Product> products = loadWithNIO(path);
 		} catch (IOException ex) {
 			ex.printStackTrace();
